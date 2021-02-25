@@ -39,7 +39,7 @@ LIST OF FUNCTIONS
 
 1. addItem(product)
 
-* product is an object with 7 attributes, it must have the following keys:
+product is an object with 7 attributes, it must have the following keys:
 * codigo_producto:--
 * cantidad_producto:--
 * nombre_producto:--
@@ -50,7 +50,7 @@ LIST OF FUNCTIONS
 
 example:
 
-addItem({
+sb.addItem({
 codigo_producto:xxxx,
 cantidad_producto:xxxx,
 nombre_producto:xxxx,
@@ -58,6 +58,58 @@ precio_producto:xxxx,
 talla_producto:xxxx,
 imagen_producto:xxxx,
 marca_producto:xxxx});
+
+
+2. deleteItem(a,b)
+
+
+parameter a is the product code and parameter b its size.
+
+example:
+
+sb.deleteItem(code,size)
+
+
+
+3. updateItems(a,b,c)
+
+
+Parameter a is the product code and parameter b its size and c the new quantity.
+
+example:
+
+sb.updateItems(code,size,quantity)
+
+
+
+4. deleteAllItems()
+
+this function removes all products from the shopping cart then reloads the page.
+
+example:
+
+sb.deleteAllItems()
+
+
+
+5. getProductsQuantity()
+
+this function returns the total amount of products in the shopping cart
+
+6. getTotalPriceCart()
+
+this function returns the total value of the shopping cart
+
+7. getShoppingBasketObj()
+
+this function returns an array of objects with the shopping cart
+
+8. idShoppingBasket()
+
+this function returns the name of our shopping cart
+
+
+
 
 
 
